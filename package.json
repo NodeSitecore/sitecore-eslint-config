@@ -1,0 +1,35 @@
+{
+  "name": "@node-sitecore/eslint-config",
+  "version": "1.0.0",
+  "description": "Sitecore ESLint configuration",
+  "main": "index.js",
+  "scripts": {
+    "gflow-release-pre": "",
+    "semantic-release": "gflow release pre && semantic-release",
+    "travis-deploy-once": "travis-deploy-once",
+    "prepublishOnly": "gflow release post",
+    "test": "eslint -c index.js --env node ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NodeSitecore/eslint-config.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "WSF Team",
+  "license": "MIT",
+  "homepage": "https://github.com/NodeSitecore/eslint-config#readme",
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "gflow": "^2.1.5",
+    "semantic-release": "^15.6.3",
+    "travis-deploy-once": "^5.0.1"
+  },
+  "dependencies": {
+    "eslint-plugin-jsdoc": "^3.3.0",
+    "eslint-plugin-vue": "^4.0.1",
+    "eslint-import-resolver-webpack": "^0.9.0",
+    "eslint-plugin-import": "^2.11.0"
+  }
+}

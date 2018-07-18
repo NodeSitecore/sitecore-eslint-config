@@ -31,14 +31,15 @@ module.exports = {
       ts: 'never',
       tsx: 'never'
     }]
-  },
-  override: [
-    /*{
-      files: ['*.vue'],
-      rules: {
-        indent: 'off',
-        'vue/script-indent': ['error', 2, { 'baseIndent': 1 }]
-      }
-    }*/
-  ]
+  }
 };
+// ,
+// override: [
+// {
+//  files: ['*.vue'],
+//  rules: {
+//    indent: 'off',
+//    'vue/script-indent': ['error', 2, { 'baseIndent': 1 }]
+//  }
+// }
+// ]

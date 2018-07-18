@@ -1,6 +1,6 @@
 {
   "name": "@node-sitecore/eslint-config",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Sitecore ESLint configuration",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once",
     "prepublishOnly": "gflow release post",
-    "test": "eslint -c index.js --env node ./"
+    "test": "eslint -c vue.js --env node ./test/*.{js,vue}",
+    "test:fix": "eslint -c vue.js --env node ./test/*.{js,vue} --fix"
   },
   "repository": {
     "type": "git",

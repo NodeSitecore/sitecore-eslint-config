@@ -16,7 +16,7 @@ module.exports = {
     'prefer-const': [2, {
       'destructuring': 'all'
     }],
-    'no-var': 2,
+    'no-var': 0,
     'no-console': 1,
     'no-alert': 2,
     'linebreak-style': [2, 'unix'],
@@ -35,10 +35,7 @@ module.exports = {
       'words': false,
       'nonwords': false
     }],
-    'one-var': [2, {
-      'uninitialized': 'always',
-      'initialized': 'never'
-    }],
+    'one-var': 0,
     'no-mixed-spaces-and-tabs': 2,
     'no-trailing-spaces': 2,
     'no-with': 2,

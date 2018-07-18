@@ -1,9 +1,12 @@
 module.exports = {
-  extends: 'plugin:vue/base',
+  extends: [
+    require.resolve('./index'),
+    'plugin:vue/base'
+  ],
   rules: {
     'vue/attribute-hyphenation': [2, 'always'],
     'vue/html-end-tags': 2,
-    'vue/html-indent': [2, 4],
+    'vue/html-indent': [2, 2],
     'vue/html-quotes': 2,
     'vue/html-self-closing': 2,
     'vue/max-attributes-per-line': 0,
@@ -29,7 +32,7 @@ module.exports = {
     'vue/require-v-for-key': 2,
     'vue/require-valid-default-prop': 2,
     'vue/return-in-computed-property': 2,
-    'vue/this-in-template': [2, 'always'],
+    'vue/this-in-template': 0,
     'vue/v-bind-style': 2,
     'vue/v-on-style': 2,
     'vue/valid-template-root': 2,
@@ -46,5 +49,17 @@ module.exports = {
     'vue/valid-v-pre': 2,
     'vue/valid-v-show': 2,
     'vue/valid-v-text': 2
-  }
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      rules: {
+        indent: 'off',
+        'vue/script-indent': ['error', 2, {
+          'baseIndent': 1,
+          'switchCase': 1
+        }]
+      }
+    }
+  ]
 };

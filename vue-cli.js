@@ -18,12 +18,6 @@ module.exports = {
     ]
   },
   rules: {
-    'one-var': 0,
-    'vue/require-default-prop': 0,
-    'vue/this-in-template': 0,
-    'indent': [2, 2, {
-      'SwitchCase': 1
-    }],
     'import/extensions': ['error', 'always', {
       js: 'never',
       mjs: 'never',
@@ -33,13 +27,3 @@ module.exports = {
     }]
   }
 };
-// ,
-// override: [
-// {
-//  files: ['*.vue'],
-//  rules: {
-//    indent: 'off',
-//    'vue/script-indent': ['error', 2, { 'baseIndent': 1 }]
-//  }
-// }
-// ]
